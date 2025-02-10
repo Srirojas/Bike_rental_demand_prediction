@@ -11,9 +11,9 @@ This project focuses on predicting bike rental demand using machine learning alg
 ## Dataset
  - Shape: (731, 14) → 731 days of bike rental data
  - Features:
-#### Categorical Columns (Encoded):
+A.Categorical Columns (Encoded):
 season, mnth, holiday, weekday, workingday, weathersit
-#### Numerical Columns (Normalized):
+B.Numerical Columns (Normalized):
 temp, atemp, hum, windspeed
  - Target Variable: rentals (Number of bikes rented)
  - Excluded Columns: instant, dteday, yr (Not relevant for prediction)
@@ -33,14 +33,14 @@ temp, atemp, hum, windspeed
  - Random Forest Regressor performed best, achieving the highest accuracy
 
 ## Key Observations
-### Feature Impact:
+### 1.Feature Impact:
  - Weather & temperature have a significant effect on rentals.
  - Weekends & holidays see different rental trends.
-### Model Comparison:
+### 2.Model Comparison:
  - Linear Regression → Decent fit but underperforms on complex relationships.
  - XGBoost Regressor → Strong performance but slightly less than Random Forest.
  - Random Forest Regressor → Best model with the highest accuracy.
-### Takeaway:
+### 3.Takeaway:
 A comparative study of models helps in choosing the most optimal algorithm for real-world deployment.
 
 ## Visualization
